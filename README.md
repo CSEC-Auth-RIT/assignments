@@ -1,6 +1,6 @@
 # Assignment 3 README
 
-This README shows where each implementation step appears in `assignment3.ipynb`.
+This README shows where each implementation step
 
 ## Implementation Lines
 
