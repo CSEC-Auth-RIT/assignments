@@ -1,4 +1,4 @@
-#include<unistd.h>
+#include <unistd.h>
 #include <sys/types.h>
 #include <sys/time.h>
 #include<stdio.h>
@@ -7,9 +7,14 @@
 
 #define LOGFILE "logfile"
 
+
+// helper function
+void print_ids(const char* label) {
+  printf("[%s] EUID: %d, UID: %d\n", label, geteuid(), getuid());
+}
+
 void initialize()
 {
-  // Lots of other stuff could be happening here
   printf("Initializing the program.\n");
 }
 
@@ -31,11 +36,27 @@ void error()
   exit(1);
 }
 
-void operate()
+void operate(FILE *logfile)
 {
   // ADD HERE
   // write to the log file
   // time, ctime, and strchr may be useful here
+  time_t now;
+  char *time_str;
+
+  //current time
+  time(&now);
+  time_str = ctime(&now);
+
+  //new line added and replace to match the format
+  char *newline = strchr(time_str, '\n');
+  if (newline) *newline = '\0';
+
+  //write to log file
+  fprintf(logfile, "%s: Nothing happened.\n", time_str);
+    printf("Log entry written.\n");
+    
+    fclose(logfile);
 }
 
 int main(int argc, char *argv[])
@@ -43,6 +64,8 @@ int main(int argc, char *argv[])
   // ADD BELOW
   // useful commands: getuid, geteuid, setuid, setruid, seteuid, setreuid
   FILE *logfile;
+
+  print_ids("Startup");
 
   initialize();         // arbitrary
 
@@ -52,7 +75,14 @@ int main(int argc, char *argv[])
     error();            // report and exit
   }
 
+  if (seteuid(getuid()) != 0) {
+    perror("Failed to drop privileges");
+    return 1;
+  }
+
+  print_ids("After Dropping Privileges");
+
   // write to the logfile, close the file
-  operate();
+  operate(logfile);
   return 1;
 }
