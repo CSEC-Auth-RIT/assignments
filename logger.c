@@ -4,6 +4,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
+#include<time.h>
 
 #define LOGFILE "logfile"
 
@@ -69,14 +70,27 @@ int main(int argc, char *argv[])
 
   initialize();         // arbitrary
 
+  // check privileges 
+  uid_t real_uid = getuid();
+  uid_t e_uid = geteuid();
+
+  if(e_uid != 0) {
+    fprintf(stderr, "Error: This program must be run with setuid root permissions.\n");
+    return 1;
+  }
+
+  // check logfile opening in root
   logfile = secure_open(LOGFILE, "a+");
 
   if (!logfile) {
-    error();            // report and exit
+    perror("Error opening logfile.");  // report and exit
+    return 1;          
   }
 
-  if (seteuid(getuid()) != 0) {
-    perror("Failed to drop privileges");
+
+  //drop privileges
+  if (seteuid(real_uid) != 0) {
+    perror("Failed to drop privileges.");
     return 1;
   }
 
@@ -84,5 +98,5 @@ int main(int argc, char *argv[])
 
   // write to the logfile, close the file
   operate(logfile);
-  return 1;
+  return 0;
 }
