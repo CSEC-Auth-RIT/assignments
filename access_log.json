@@ -2,3 +2,29 @@
 {"timestamp": "Tue, 14, Apr 2026 12: 03: 01 GMT", "user": "b3ac1c22-d0c5-4724-b650-41cb446873b0", "application": "Risk Management System", "access_type": "Approve", "result": "Denied"}
 {"timestamp": "Tue, 14, Apr 2026 12: 08: 52 GMT", "user": "a48c5c13-6e1d-4251-938b-57c519d9b174", "application": "Money Market Instruments", "access_type": "Read", "result": "Denied"}
 {"timestamp": "Tue, 14, Apr 2026 12: 08: 52 GMT", "user": "a48c5c13-6e1d-4251-938b-57c519d9b174", "application": "Risk Management System", "access_type": "Approve", "result": "Denied"}
+{"timestamp": "Wed, 15, Apr 2026 10: 14: 29 GMT", "user": "c70c3845-bedd-4a71-8e3a-4d9ffa7037ec", "application": "Money Market Instruments", "access_type": "Read", "result": "Granted"}
+{"timestamp": "Wed, 15, Apr 2026 10: 14: 29 GMT", "user": "c70c3845-bedd-4a71-8e3a-4d9ffa7037ec", "application": "Risk Management System", "access_type": "Approve", "result": "Denied"}
+{"timestamp": "Wed, 15, Apr 2026 10: 14: 35 GMT", "user": "d2a34dca-22a7-4868-bd45-78be2a3db9c8", "application": "Money Market Instruments", "access_type": "Read", "result": "Granted"}
+{"timestamp": "Wed, 15, Apr 2026 10: 14: 35 GMT", "user": "d2a34dca-22a7-4868-bd45-78be2a3db9c8", "application": "Risk Management System", "access_type": "Approve", "result": "Denied"}
+{"timestamp": "Wed, 15, Apr 2026 10: 16: 24 GMT", "user": "a597af0b-441f-4a62-80ef-f6076f29eb73", "application": "Money Market Instruments", "access_type": "Read", "result": "Granted"}
+{"timestamp": "Wed, 15, Apr 2026 10: 16: 24 GMT", "user": "a597af0b-441f-4a62-80ef-f6076f29eb73", "application": "Risk Management System", "access_type": "Approve", "result": "Denied"}
+{"timestamp": "Wed, 15, Apr 2026 10: 18: 29 GMT", "user": "794fd189-6a01-46c0-80d1-73a523762f6f", "application": "Money Market Instruments", "access_type": "Read", "result": "Granted"}
+{"timestamp": "Wed, 15, Apr 2026 10: 18: 29 GMT", "user": "794fd189-6a01-46c0-80d1-73a523762f6f", "application": "Risk Management System", "access_type": "Approve", "result": "Denied"}
+{"timestamp": "Wed, 15, Apr 2026 10: 29: 45 GMT", "user": "c1fdb7a6-8eb4-4d7b-84f2-2831d82b0047", "application": "Money Market Instruments", "access_type": "Read", "result": "Granted"}
+{"timestamp": "Wed, 15, Apr 2026 10: 29: 45 GMT", "user": "c1fdb7a6-8eb4-4d7b-84f2-2831d82b0047", "application": "Risk Management System", "access_type": "Approve", "result": "Denied"}
+{"timestamp": "Wed, 15 Apr 2026 10:38:00 GMT", "user": "0ebbef1c-318c-43eb-ba59-626a67513f9d", "application": "Money Market Instruments", "access_type": "Read", "result": "Granted"}
+{"timestamp": "Wed, 15 Apr 2026 10:38:00 GMT", "user": "0ebbef1c-318c-43eb-ba59-626a67513f9d", "application": "Risk Management System", "access_type": "Approve", "result": "Denied"}
+{"timestamp": "Wed, 15 Apr 2026 10:38:00 GMT", "user": "c78fa0e6-2e73-468d-aeb0-2856a3f1bda0", "application": "Money Market Instruments", "access_type": "Read", "result": "Denied - No Active Session"}
+{"timestamp": "Wed, 15 Apr 2026 10:38:00 GMT", "user": "4a10196b-39b7-435e-8bf3-a136bd801307", "application": "Derivatives Trading", "access_type": "Write", "result": "Denied - Session Expired"}
+{"timestamp": "Wed, 15 Apr 2026 10:38:04 GMT", "user": "93e9f193-bcf0-49ab-a2d8-74f39af46450", "application": "Money Market Instruments", "access_type": "Read", "result": "Granted"}
+{"timestamp": "Wed, 15 Apr 2026 10:38:04 GMT", "user": "93e9f193-bcf0-49ab-a2d8-74f39af46450", "application": "Risk Management System", "access_type": "Approve", "result": "Denied"}
+{"timestamp": "Wed, 15 Apr 2026 10:38:04 GMT", "user": "06b51cc4-d069-4d38-b874-596d7b438eae", "application": "Money Market Instruments", "access_type": "Read", "result": "Denied - No Active Session"}
+{"timestamp": "Wed, 15 Apr 2026 10:38:04 GMT", "user": "4b6f7de1-8cd9-4454-bd60-cec62e5e8883", "application": "Derivatives Trading", "access_type": "Write", "result": "Denied - Session Expired"}
+{"timestamp": "Wed, 15 Apr 2026 10:38:09 GMT", "user": "8238b5d2-5e74-4433-9814-bec72c903802", "application": "Money Market Instruments", "access_type": "Read", "result": "Granted"}
+{"timestamp": "Wed, 15 Apr 2026 10:38:09 GMT", "user": "8238b5d2-5e74-4433-9814-bec72c903802", "application": "Risk Management System", "access_type": "Approve", "result": "Denied"}
+{"timestamp": "Wed, 15 Apr 2026 10:38:09 GMT", "user": "651ab510-bad3-454b-8c74-6ed64c336f03", "application": "Money Market Instruments", "access_type": "Read", "result": "Denied - No Active Session"}
+{"timestamp": "Wed, 15 Apr 2026 10:38:09 GMT", "user": "adb0d5aa-347f-4cce-a263-7f622a4d9fab", "application": "Derivatives Trading", "access_type": "Write", "result": "Denied - Session Expired"}
+{"timestamp": "Wed, 15 Apr 2026 10:38:14 GMT", "user": "df798c11-ee41-4397-a1cb-ec71a8f637c3", "application": "Money Market Instruments", "access_type": "Read", "result": "Granted"}
+{"timestamp": "Wed, 15 Apr 2026 10:38:14 GMT", "user": "df798c11-ee41-4397-a1cb-ec71a8f637c3", "application": "Risk Management System", "access_type": "Approve", "result": "Denied"}
+{"timestamp": "Wed, 15 Apr 2026 10:38:14 GMT", "user": "df41d47b-90c0-43c2-98c0-bfe392a7c2e6", "application": "Money Market Instruments", "access_type": "Read", "result": "Denied - No Active Session"}
+{"timestamp": "Wed, 15 Apr 2026 10:38:14 GMT", "user": "30dcca99-8237-4c1d-8f2e-76430fd34321", "application": "Derivatives Trading", "access_type": "Write", "result": "Denied - Session Expired"}
